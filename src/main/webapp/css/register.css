@@ -1,0 +1,410 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f0f0;
+    line-height: 1.6;
+    color: #5f4b66;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #800000, #b83c38); /* Maroon red gradient */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+header .nav-links li {
+    display: inline;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+header .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?dogs,cats') no-repeat center center/cover; /* Background image */
+    background-color: rgba(128, 0, 0, 0.6); /* Maroon overlay */
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero .cta-btn {
+    background-color: #b83c38;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-btn:hover {
+    background-color: #800000;
+}
+
+/* About Us Section */
+.about {
+    background-color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 40px 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: center;
+    background: url('https://www.transparenttextures.com/patterns/heart.png') repeat; /* Heart pattern */
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #800000;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #5f4b66;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #800000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .nav-links a {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .hero .cta-btn {
+        padding: 12px 20px;
+        font-size: 1.1em;
+    }
+
+    .about {
+        padding: 30px 15px;
+    }
+}
+/* Welcome Section Styles */
+.welcome {
+    background: url('https://source.unsplash.com/1600x900/?dogs,cats') no-repeat center center/cover; 
+    background-color: rgba(128, 0, 0, 0.6); /* Maroon overlay */
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome .welcome-content h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcome .welcome-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.welcome .login-btn {
+    background-color: #b83c38;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.welcome .login-btn:hover {
+    background-color: #800000;
+}
+
+/* Responsive Styles for Welcome Page */
+@media (max-width: 768px) {
+    .welcome .welcome-content h1 {
+        font-size: 2.5em;
+    }
+
+    .welcome .welcome-content p {
+        font-size: 1.2em;
+    }
+
+    .welcome .login-btn {
+        padding: 12px 20px;
+        font-size: 1.1em;
+    }
+}
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f0f0;
+    margin: 0;
+    padding: 0;
+    color: #5f4b66;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #b83c38;
+    margin-bottom: 10px;
+  }
+  
+  .est {
+    font-size: 14px;
+    color: #636e72;
+    margin-bottom: 15px;
+  }
+  
+  .login-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #b83c38;
+  }
+  
+  .input-field, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f4f0f0;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #b83c38;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .login-button:hover {
+    background-color: #800000;
+  }
+  
+  .forgot-password, .create-account {
+    margin: 12px 0;
+  }
+  
+  .tagline {
+    margin-top: 20px;
+    font-style: italic;
+    color: #636e72;
+  }
+  
+  a {
+    color: #b83c38;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Heart Pattern Background */
+  .container {
+    background: url('https://www.transparenttextures.com/patterns/heart.png');
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .login-title {
+      font-size: 20px;
+    }
+  
+    .input-field, select {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .login-button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+/* Admin Dashboard Styles */
+.admin-dashboard {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .dashboard-title {
+    font-size: 36px;
+    color: #b83c38;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-subtitle {
+    font-size: 18px;
+    color: #5f4b66;
+    margin-bottom: 40px;
+  }
+  
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .category-card {
+    background-color: #fff1f0;
+    border: 2px solid #b83c38;
+    border-radius: 12px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .category-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  .register-title {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+    color: #ff6b6b;
+  }
+  
+  .input-field[type="file"] {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  
+  .input-field[type="date"] {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  
+  .create-account {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .create-account a {
+    color: #ff6b6b;
+    text-decoration: none;
+  }
+  
+  .create-account a:hover {
+    text-decoration: underline;
+  }
+      
